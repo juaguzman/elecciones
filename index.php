@@ -22,7 +22,7 @@ $consulta=  mysql_query($sql); ?>
             <tr>
                 
             <tr>
-            <th><img src="img/<?php echo $campos->imagenCandidato;?>" width="350" height="140"></th>
+            <th><img src="img/<?php echo $campos->imagenCandidato;?>" width="250" height="140"></th>
             </tr>
             <tr>
             <th>ID: <?php echo $id=$campos->idcandidatos;?></th>
