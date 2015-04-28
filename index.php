@@ -14,10 +14,11 @@ and open the template in the editor.
 <?php include ("header.php"); ?>
 <?php include ("./conexion.php"); ?>
 <?php $sql ="SELECT * FROM candidatos";
-$consulta=  mysql_query($sql); ?>
+$consulta=  mysql_query($sql); $cont=1; ?>
     <body>
-   <?php while($campos=mysql_fetch_object($consulta)){?>     
-        <table class="pr">
+   <?php while($campos=mysql_fetch_object($consulta)){?>  
+      
+            <table class="pr">
             <tbody>
             <tr>
                 
@@ -46,9 +47,8 @@ $consulta=  mysql_query($sql); ?>
             <th>Votos: <?php echo $campos->votos;?>  </th>
             </tr> 
              <tr>
-                 <th> <form method="post" action="Candidato.php?id=<?php echo $campos->idcandidatos; ?>">
-                <input type="submit" value="votar" />
-                  <a class="pr" href="Candidato.php?id=<?php echo $campos->idcandidatos; ?>" onclick="modificar(<?php echo $campos->idcandidatos; ?>)" >Votar</a></th>
+            <th>
+            <a class="pr" href="Candidato.php?id=<?php echo $campos->idcandidatos; ?>" onclick="modificar(<?php echo $campos->idcandidatos; ?>)" >Votar</a></th>
             </tr> 
             <tr>
            
