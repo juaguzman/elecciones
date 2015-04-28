@@ -46,10 +46,13 @@ $consulta=  mysql_query($sql); ?>
             <th>Votos: <?php echo $campos->votos;?>  </th>
             </tr> 
              <tr>
-                 <th> <form method="post" action="Candidato.php?id=<?php echo $id; ?>">
-                <input type="submit" value="Votar" /></th>
+                 <th> <form method="post" action="Candidato.php?id=<?php echo $campos->idcandidatos; ?>">
+                <input type="submit" value="votar" />
+                  <a class="pr" href="Candidato.php?id=<?php echo $campos->idcandidatos; ?>" onclick="modificar(<?php echo $campos->idcandidatos; ?>)" >Votar</a></th>
             </tr> 
-            <a class="pr" href="#" onclick="modificar(<?php echo $campos->id_sug; ?>)" >Votar</a>
+            <tr>
+           
+            </tr> 
             </tr>
             </tbody>
         </table> 

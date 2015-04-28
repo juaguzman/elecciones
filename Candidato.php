@@ -19,12 +19,18 @@ Class Candidato
          $this->votos = $votos;
          $this->costocCamp = $costo;
     }
-    
-    
-}
+}    
 
 
-
+     if($_POST['votar'])
+     {
+         $id=$_POST['id'];
+         echo 'el id de el aspirante es'+$id;
+     }
+      
 
 
 ?>
+
+
+
