@@ -1,0 +1,51 @@
+#header
+{
+    width: 1500px;
+    height: 155px;
+    color: wheat;
+    background-color: #4F5B65; //#A5CD4E; //#638cb5;
+    margin: 0 auto ;
+    padding-top: 9px;
+    font-size: 30px;
+}
+h1{
+    font-family:“Lucida Grande”, Verdana, Helvetica, Arial, sans-serif;
+    color: white;
+    margin-top: 50px;
+    margin-left:30px;
+    font-size: 50px;
+ }
+ h3
+ {
+     font-family: Hervetica;
+     color: darkgray;
+     font-size: 12px;
+          
+ }
+ 
+ #logo{
+     float: right;
+     margin-right: 0px;
+     margin-top: -130px;
+ }
+ 
+ body
+ {
+     background:beige;
+ }
+ 
+ .pr
+ {
+ border: 2px solid black;    
+ }
+ 
+ table
+ {
+     
+     width:450px;
+     margin-top:10px;
+     border: 2px solid black;
+     background: green;        
+    float: left;
+    margin-left: 10px;
+ }

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://www.netbeans.org/ns/project/1">
+    <type>org.netbeans.modules.php.project</type>
+    <configuration>
+        <data xmlns="http://www.netbeans.org/ns/php-project/1">
+            <name>Elecciones</name>
+        </data>
+        <spellchecker-wordlist xmlns="http://www.netbeans.org/ns/spellchecker-wordlist/1">
+            <word>apellido</word>
+            <word>campaña</word>
+            <word>Costo</word>
+            <word>Edad</word>
+            <word>ELECCIONES</word>
+            <word>Guzman</word>
+            <word>nombre</word>
+            <word>Partido</word>
+            <word>Votar</word>
+            <word>Votos</word>
+        </spellchecker-wordlist>
+    </configuration>
+</project>
