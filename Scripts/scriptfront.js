@@ -19,3 +19,12 @@ function modificar(pos)
         return false;
 }
 
+                     
+function vaciar()
+{
+   if(confirm("Desea vaciar las urnas"))
+        location.href="Vaciar.php";
+    else
+        return false;
+}
+

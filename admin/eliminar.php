@@ -1,11 +1,16 @@
 <?php session_start();
-include ("../conexion.php"); 
+include ("../conexion.php");
+$id=$_GET['id'];
+$sql="select * from candidatos where idcandidatos=$id";
 $consulta=  mysql_query($sql);
+$campos=  mysql_fetch_object($consulta);
 
-$ruta="../candidatos/";
-unlink($ruta.$consulta['nomimagen'][$id]);
+ $fotov = $campos->imagenCandidato;
+    $ruta = "../candidatos/";
 
-$id = $_GET[id];
+
+unlink($ruta.$fotov);
+
 
 $sql = "DELETE from candidatos WHERE idcandidatos=$id";
 
@@ -22,3 +27,6 @@ if (!$sql)
         header("Location:login.php");
         return $consulta;
 ?>
+
+
+<img src="../candidatos/"

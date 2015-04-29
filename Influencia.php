@@ -36,7 +36,7 @@ function ponPrefijo()
                  <option value="2">Radio</option>
                  
                 </select>
-                <input type="submit" value="votar" onclick="" >
+                <input id="votos" type="submit" value="votar" onclick="" >
             </form>
         </div>
     </body>

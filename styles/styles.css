@@ -31,7 +31,7 @@ h1{
  
  body
  {
-     background:beige;
+     background:#dcdcdc;
  }
  
  .pr
@@ -62,6 +62,8 @@ h1{
  
  #votar
  {
+     width:200px;
+     height:100px;
     background:black;
      color:white;
      list-style:none;
@@ -73,7 +75,8 @@ h1{
      margin-top: 50px;
      background:gray;
      width:600px;
-     height:200px;
+     height:150px;
+     outline: 2px solid black;
      
  }
  
@@ -81,6 +84,7 @@ h1{
 {
     padding:20px;
     color: whitesmoke;
+    font-family: sans-serif;
     
 }
 #selecion
@@ -98,19 +102,91 @@ h1{
 #resultados
 {
     
-    width:600px;
+    width:800px;
     height:300px;
-    background:red;
+    background:gray;
     margin: 0 auto;
      margin-left:33%;
      margin-top:20px;
+     
+     
     
     
+}
+
+#resul
+{
+    font-family:sans-serif;
+    font-size:40px;
+    background: gray;
+    width:750px;
+  
 }
 #divi
 {
     position: relative;
+    height: auto;
+    width: auto;
+    clear: both;
+    max-height:1000px;
+    min-height:380px;   
+    min-width: 100px;    
+    max-width:1100px;
+    position: relative;
     margin: 0 auto;
-   
+   border: none;
+    background: #dcdcdc;
+    margin-top:5px;
+    
+}
+#votos
+{
+    width:300px;    
+    float:left;
+    margin-left:33%;
+    margin-top:20px;
+        
+}
+
+#promVotos
+{
+background:gray;
+width:320px;
+height:200px;
+margin: 0 auto;
+margin-top:50px;
+border:black;
+outline:2px solid black;
+}
+
+#rs
+{
+ background:gray;
+width:300px;
+height:50px;  
+margin-left:10px;
+margin-top:50px;
+}
+
+
+#rs.th
+{
+    border: 2px solid black;
+}
+
+#Aceptar
+{
+    font-family: sans-serif;
+    font-size:30px;
+     background: black;
+     color:white;
+     
+}
+
+#fin
+{
     background: black;
+    color: white;
+    
+    
 }

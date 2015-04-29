@@ -6,7 +6,7 @@
   <title>Administracion de elecciones</title>
   <link rel="stylesheet" href="../styles/styleAdmin.css">
   <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
-        <script src="../admin/scripts/scriptback.js"></script>
+  <script src="scripts/scriptback.js"></script>
 </head>
 <?php include ("../conexion.php"); ?>
 <?php $sql ="SELECT * FROM candidatos";
