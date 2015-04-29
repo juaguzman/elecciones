@@ -23,7 +23,9 @@
   <meta charset="UTF-8">
   <title>Elecciones 2015</title>
   <link rel="stylesheet" href="../styles/styleAdmin.css">
-	<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+  <script src="../admin/scripts/scriptback.js"></script>
+  
 </head>
 <body>
   <div class="container">

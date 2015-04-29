@@ -56,7 +56,7 @@ else { $permitidos = array("image/jpg", "image/jpeg", "image/gif", "image/png");
         <title>Administracion de elecciones</title>
         <link rel="stylesheet" href="../styles/styleAdmin.css">
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
-        <script src="../scripts/script.js"></script>
+        <script src="../admin/scripts/scriptback.js"></script>
         
     </head>
     <body>

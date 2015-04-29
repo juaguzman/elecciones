@@ -1,16 +1,24 @@
-<?php
+<?php session_start();
+include ("../conexion.php"); 
+$consulta=  mysql_query($sql);
 
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
+$ruta="../candidatos/";
+unlink($ruta.$consulta['nomimagen'][$id]);
 
-/**
- * Description of eliminar
- *
- * @author Fernanda
- */
-class eliminar {
-    //put your code here
-}
+$id = $_GET[id];
+
+$sql = "DELETE from candidatos WHERE idcandidatos=$id";
+
+$consulta=  @mysql_query($sql);
+
+if (!$sql) 
+    {
+    $consulta.="Error Eliminanda la sugerencia en la base de datos: " . mysql_error();
+    } 
+    else 
+        {
+        $consulta.="la sugerencia con identificacion " . $id . " fue eliminado del sistema";
+        }
+        header("Location:login.php");
+        return $consulta;
+?>
