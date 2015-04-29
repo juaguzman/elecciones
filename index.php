@@ -17,9 +17,9 @@ and open the template in the editor.
 <?php $sql ="SELECT * FROM candidatos";
 $consulta=  mysql_query($sql); ?>
     <body>
-       
+        <div id="divi">   
    <?php while($campos=mysql_fetch_object($consulta)){?>  
-      
+        
             <table class="pr">
             <tbody>
             <tr>                
@@ -49,16 +49,31 @@ $consulta=  mysql_query($sql); ?>
             </tr> 
              <tr>
              <th> 
-            <form action="" method="POST" enctype="multipart/form-data">
-            <a id="votar" class="pr" href="#" onclick="votar(<?php echo $campos->idcandidatos; ?>)" >Votar</a>  
-            <a href="#"  onclick= ventana=window.open('Influencia.php?id=<?php echo $campos->idcandidatos; ?>','ventana','width=640,height=300,scrollbars=NO,accesskey=""menubar=NO,resizable=NO,titlebar=NO,status=NO');return false>Contacto</a>
+            <form action="" method="POST" enctype="multipart/form-data">             
+            <a id="votar" href="#"  onclick= ventana=window.open('Influencia.php?id=<?php echo $campos->idcandidatos; ?>','ventana','width=640,height=300,scrollbars=NO,accesskey=""menubar=NO,resizable=NO,titlebar=NO,status=NO');return false>Votar</a>
             </form>    
             </th>
             </tr>            
             </tr>
             </tbody>
-        </table> 
+        </table>         
         <?php }?> 
-        
+    </div>
+       
     </body>
+    <footer>
+         <table id="resultados">
+             <tbody>
+                 <tr>
+                     <th>
+             <?php $sql ="select sum(votos) as 'suma' from candidatos";
+                $consulta=  mysql_query($sql); 
+                $campos=mysql_fetch_object($consulta);?>             
+                         <input value="Total votos: <?php echo $campos->suma; ?>" readonly>
+                     </th>
+             </tr>
+             </tbody>
+            
+        </table>
+    </footer>
 </html>

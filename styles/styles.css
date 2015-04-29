@@ -94,3 +94,23 @@ h1{
 {
     background:green;
 }
+
+#resultados
+{
+    
+    width:600px;
+    height:300px;
+    background:red;
+    margin: 0 auto;
+     margin-left:33%;
+     margin-top:20px;
+    
+    
+}
+#divi
+{
+    position: relative;
+    margin: 0 auto;
+   
+    background: black;
+}
