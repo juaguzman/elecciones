@@ -9,7 +9,7 @@ and open the template in the editor.
   <meta charset="UTF-8">
   <title>ELECCIONES</title>
   <link rel="stylesheet" href="styles/styles.css">
-  <script src="Scripts/Script.js"></script>
+  <script src="Scripts/scriptfront.js"></script>
    <!--<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">-->
 </head>
 <?php include ("header.php"); ?>
@@ -22,8 +22,7 @@ $consulta=  mysql_query($sql); ?>
       
             <table class="pr">
             <tbody>
-            <tr>
-                
+            <tr>                
             <tr>
                 <th><img src="candidatos/<?php echo $campos->imagenCandidato;?>" width="250" height="140"></th>
             </tr>
@@ -52,13 +51,10 @@ $consulta=  mysql_query($sql); ?>
              <th> 
             <form action="" method="POST" enctype="multipart/form-data">
             <a id="votar" class="pr" href="#" onclick="votar(<?php echo $campos->idcandidatos; ?>)" >Votar</a>  
-            <a href="#"  onclick=window.open('Influencia.php?id=<?php echo $campos->idcandidatos; ?>','ventana','width=640,height=300,scrollbars=NO,accesskey=""menubar=NO,resizable=NO,titlebar=NO,status=NO');return false>Contacto</a>
+            <a href="#"  onclick= ventana=window.open('Influencia.php?id=<?php echo $campos->idcandidatos; ?>','ventana','width=640,height=300,scrollbars=NO,accesskey=""menubar=NO,resizable=NO,titlebar=NO,status=NO');return false>Contacto</a>
             </form>    
             </th>
-            </tr> 
-            <tr>
-           
-            </tr> 
+            </tr>            
             </tr>
             </tbody>
         </table> 

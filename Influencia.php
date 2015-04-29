@@ -1,5 +1,5 @@
 <?php 
-$id=$_GET['id'];
+$ids=$_GET['id'];
 
 
 ?>
@@ -16,19 +16,28 @@ and open the template in the editor.
   <link rel="stylesheet" href="styles/styles.css">
   <script src="Scripts/Script.js"></script>
    <!--<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">-->
+   <script>
+function ponPrefijo()
+{
+    
+    window.close()
+}
+</script> 
 </head>
     <body id="binflu">
        
         <div id="influ">
+           
              <div id="pregunta"> ¿Que medio influencio mas para que usted vote por el candidato?</div>
-             <select name="influencia" id="selecion">
-                <option value="tele">Television</option>
-                <option value="tele">Radio</option>
-                <option value="tele">Internet</option>
-            </select>
-             
-             <a id="votar" class="pr" href="#" onclick="votar(<?php echo $id; ?>),inf=<?php echo $_POST['influencia'];?>" >Votar</a> 
-             
+            <form action="votar.php?id=<?php echo $ids?>" method="post">
+                <select id="selecion" name="influencia">
+                 <option value="0">Television</option>
+                 <option value="1">Internet</option>
+                 <option value="2">Radio</option>
+                 
+                </select>
+                <input type="submit" value="votar" onclick="" >
+            </form>
         </div>
     </body>
 </html>
