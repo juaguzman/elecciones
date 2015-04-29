@@ -31,9 +31,9 @@ function ponPrefijo()
              <div id="pregunta"> ¿Que medio influencio mas para que usted vote por el candidato?</div>
             <form action="votar.php?id=<?php echo $ids?>" method="post">
                 <select id="selecion" name="influencia">
-                 <option value="0">Television</option>
-                 <option value="1">Internet</option>
-                 <option value="2">Radio</option>
+                 <option value="1" selected>Television</option>
+                 <option value="2">Internet</option>
+                 <option value="3">Radio</option>
                  
                 </select>
                 <input id="votos" type="submit" value="votar" onclick="" >
