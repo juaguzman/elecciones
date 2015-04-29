@@ -5,10 +5,10 @@
 		$mail=strtolower($_POST['mail']);
 		$contra=$_POST['con'];
 		
-		if($mail=="cine@paradise.com" && $contra=="123")
+		if($mail=="admin@elecciones.com" && $contra=="123")
 		{
 			session_start();
-			$_SESSION['email'][0]="cine@paradise.com";
+			$_SESSION['email'][0]="admin@elecciones.com";
 			$_SESSION['contra'][0]="123";
 			$_SESSION['cont']=1;
 			header('Location:login.php');
