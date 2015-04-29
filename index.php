@@ -9,13 +9,15 @@ and open the template in the editor.
   <meta charset="UTF-8">
   <title>ELECCIONES</title>
   <link rel="stylesheet" href="styles/styles.css">
+  <script src="Scripts/Script.js"></script>
    <!--<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">-->
 </head>
 <?php include ("header.php"); ?>
 <?php include ("./conexion.php"); ?>
 <?php $sql ="SELECT * FROM candidatos";
-$consulta=  mysql_query($sql); $cont=1; ?>
+$consulta=  mysql_query($sql); ?>
     <body>
+       
    <?php while($campos=mysql_fetch_object($consulta)){?>  
       
             <table class="pr">
@@ -47,8 +49,12 @@ $consulta=  mysql_query($sql); $cont=1; ?>
             <th>Votos: <?php echo $campos->votos;?>  </th>
             </tr> 
              <tr>
-            <th>
-            <a class="pr" href="Candidato.php?id=<?php echo $campos->idcandidatos; ?>" onclick="modificar(<?php echo $campos->idcandidatos; ?>)" >Votar</a></th>
+             <th> 
+            <form action="" method="POST" enctype="multipart/form-data">
+            <a id="votar" class="pr" href="#" onclick="votar(<?php echo $campos->idcandidatos; ?>)" >Votar</a>  
+            <a href="#"  onclick=window.open('Influencia.php?id=<?php echo $campos->idcandidatos; ?>','ventana','width=640,height=300,scrollbars=NO,accesskey=""menubar=NO,resizable=NO,titlebar=NO,status=NO');return false>Contacto</a>
+            </form>    
+            </th>
             </tr> 
             <tr>
            

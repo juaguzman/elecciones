@@ -1,5 +1,5 @@
 <head>
-    <a class="pr" href="admin/index.php">Iniciar sesion</a>
+<a id="inicio" href="admin/index.php">Iniciar sesion</a>
      <div id="header">
           
                <h1>Elecciones</h1>
